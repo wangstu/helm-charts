@@ -2226,7 +2226,8 @@ prometheus:
 
   ## Annotations for Prometheus
   ##
-  annotations: {}
+  annotations:
+    argocd.argoproj.io/sync-options: Replace=true
 
   ## Configure network policy for the prometheus
   networkPolicy:
